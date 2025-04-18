@@ -1,0 +1,75 @@
+body, html {
+	margin: auto;
+	height: 75%;
+	width: 60%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #455473;
+	background-image: url(calcbg.jpg);
+}
+#title {
+	color: white;
+	text-align: center;
+	font-size: 20px;
+}
+#calc {
+	border: 5px solid #1E1E1E;
+	background-color: #1E1E1E;
+	border-radius: 3%;
+	display:grid;
+	width: 350px;
+	height: 500px;
+	box-shadow: 0 0 10px aqua;
+}
+.buttons {
+	border:1px solid #1E1E1E;
+	display: flex;
+	gap: 2px;
+	width:auto;
+}
+button {
+	color: white;	
+	width: 100%;
+	height: 70px;
+	background-color: #444444;
+	font-size: 20px;
+	border-radius: 5%;
+	border: 0;
+	transition: 0.1s ease-in-out;
+}
+#equal {
+	background-color: #F16767;
+	color: black;
+}
+button:hover, .dark {
+	background-color: #2D2D2D;
+}
+.dark:hover, #equal:active {
+	background-color: #444;
+	color: white;
+}
+button:active, .dark:active {
+	background-color: #F16767;
+}
+#logout {
+	height:80px;
+	width: 200px;
+	margin: auto;
+}
+#signout {
+	height: 40px;
+	width: 200px;
+	margin-top: 40px;
+	background-color: violet;
+	color: white;
+	font-size: 20px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	cursor: pointer;
+	border-radius: 5px;
+}
+#signout:hover {
+	background-color: rgb(134, 109, 234);
+	font-weight: bold;
+	box-shadow: 0 0 10px 5px aqua;
+}
