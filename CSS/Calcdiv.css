@@ -1,0 +1,109 @@
+body {
+	height: 100%;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+	background-image: url(../PICS/calcbg.jpg);
+}
+#container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+	padding: 20px;
+}
+h1 {
+	color: white;
+	margin: 0;
+	background-color: #72448f;
+	border-radius: 5px;
+	box-shadow: 0 0 5px 5px aqua;
+	font-size: 50px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	user-select: none;
+}
+#title {
+	color: white;
+	text-align: center;
+	font-size: 20px;
+}
+#calc {	
+	background-color: #1E1E1E;
+	border-radius: 3%;
+	display: grid;
+	width: 350px;
+	height: 580px;
+	box-shadow: 0 0 10px aqua;
+	user-select: none;
+	padding: 5px;
+}
+#calc input[type=text] {
+	height: 100px;
+	background-color: #1E1E1E;
+	border: none;
+	text-align: right;
+	font-size: 25px;
+	margin-bottom: 2px;
+}
+.buttons {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 5px;
+
+}
+button {
+	color: white;	
+	width: 100%;
+	height: 70px;
+	background-color: #444444;
+	font-size: 20px;
+	border-radius: 5%;
+	border: 0;
+	transition: 0.1s ease-in-out;
+	cursor: pointer;
+}
+button.clear {
+	grid-column: span 2;
+}
+#equal {
+	background-color: #F16767;
+	color: black;
+}
+button:hover {
+	background-color: #2D2D2D;
+	box-shadow: 0 0 10px aqua;
+}
+.dark {
+	background-color: #2D2D2D;
+}
+.dark:hover, #equal:active {
+	background-color: #444;
+	color: white;
+	box-shadow: 0 0 10px aqua;
+}
+button:active, .dark:active {
+	background-color: #72448f;
+}
+#logout {
+	height:80px;
+	width: 200px;
+	margin: auto;
+}
+#signout {
+	height: 40px;
+	width: 200px;
+	background-color: violet;
+	color: white;
+	font-size: 20px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	cursor: pointer;
+	border-radius: 5px;
+}
+#signout:hover {
+	background-color: rgb(134, 109, 234);
+	font-weight: bold;
+	box-shadow: 0 0 10px 5px aqua;
+}
